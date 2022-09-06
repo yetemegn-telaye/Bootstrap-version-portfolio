@@ -1,26 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bootsrap-Version-Portfolio
 
-> Description the project.
+> bootstrap version of a portfolio website
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html, Css
+- Bootstrap
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+none
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -40,17 +35,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Wilson Kimiri**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/willy836)
+- Twitter: [@twitterhandle](https://twitter.com/Kimiri836)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/wilson-kimiri-420396235/)
 
-👤 **Author2**
+👤 **Yetemegn Lemma**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/yetemegn-telaye)
+- Twitter: [@twitterhandle](https://twitter.com/Yetemegn19)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yetemegn-telaye-81370920a/)
 
 ## 🤝 Contributing
 
