@@ -8,8 +8,8 @@
     <script src="Js/bootstrap.min.js"></script>
     <title>Portfolio bootstrap</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+<body class="position-relative">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="navbarexample2">
         <div class="container-fluid px-5 mx-5">
           <a class="navbar-brand" href="#">John Doe</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,13 +18,13 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                <a class="nav-link" aria-current="page" href="#scrollspyheading1">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#scrollspyheading2">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#scrollspyheading3">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="images/Union.png" alt="Message Icon"/></a>
@@ -33,9 +33,10 @@
           </div>
         </div>
       </nav>
+      <main data-bs-spy="scroll" data-bs-target="#navbarexample2 "  data-bs-offset="0" class="scrollspy-example" tabindex="0">
       <section class="container-fluid text-light bg-dark">
         <div class="row align-items-center my-0">
-            <div class="col col-1 ms-5">
+            <div class="col d-sm-none d-none d-md-block d-lg-block col-1 ms-5">
                 <div style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                     <ol class="breadcrumb row">
                         <li class="breadcrumb-item"><a href="#"><img src="images/social-icons/github.svg" alt="Github Icon"/></a></li>
@@ -45,54 +46,70 @@
                         <li class="breadcrumb-item"><a href="#"><img src="images/social-icons/medium.svg" alt="Medium Icon"/></a></li>
                     </ol>
                 </div>
-            </div>
-            
-            <div class="col">
-                <h1 class="fw-bolder text-danger">Hey There.<br/>I’m Alex</h1>
-                <p class="fs-5 fw-bold">I’am a Software Developer</p>
+            </div>          
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                <h1 class="fw-bolder text-danger">Hey There.<br/>I'm Alex</h1>
+                <p class="fs-5 fw-bold">I'am a Software Developer</p>
                 <p>I can help you build a product , 
                     feature or website Look through some
                      of my work and experience! If you like
                       what you see and have a project you need coded, 
-                    don’t hestiate to contact me.
+                    don't hestiate to contact me.
                 </p>
             </div>
-            <div class="col pe-0">
-                <img src="images/Illustration-header.png" alt="Desktop illustration header"/>
+
+            <div class="col d-sm-inline d-md-none d-lg-none d-sm-inline col-6 col-sm-6 align-self-start ">
+              <div style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li class="breadcrumb-item align-self-center"><a href="#"><img src="images/social-icons/github.svg" alt="Github Icon"/></a></li>
+                      <li class="breadcrumb-item align-self-center" aria-current="page"><img src="images/social-icons/Linkedinicon.svg" alt="Linkedin Icon"/></li>
+                      <li class="breadcrumb-item align-self-center"><a href="#"><img src="images/social-icons/angellist.svg" alt="Angelist Icon"/></a></li>
+                      <li class="breadcrumb-item align-self-center" aria-current="page"><img src="images/social-icons/twitter.svg" alt="Twitter Icon"/></li>
+                      <li class="breadcrumb-item align-self-center"><a href="#"><img src="images/social-icons/medium.svg" alt="Medium Icon"/></a></li>
+                  </ol>
+              </div>
+          </div>
+    
+            <div class="col-6 col-sm-6 pe-0 me-0 ">
+                <img class="img-fluid me-0 pe-0" src="images/Illustration-header.png" alt="Desktop illustration header"/>
             </div>
         </div>
+
       </section>
-      <section class="container my-5 py-5">
-        <div class="row">
-          <div class="col-3">
-            <h2>My Recent Works</h2>
+
+      <section class=" container my-5 py-5 scrollspy-example">
+        <div class="row my-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <h2 id="scrollspyheading1">My Recent Works</h2>
           </div>
           <div class="col">
             <hr>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="images/works-images/ImgPlaceholder-desktop.svg" alt="Desktop first image">
+
+        <div class="row g-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="images/works-images/ImgPlaceholder-desktop.svg" alt="Desktop first image">
           </div>
-          <div class="col">
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
             <h2>Multi-Post Stories</h2>
             <p>A daily selection of privately personalized
                reads; no accounts or sign-ups required. has
                 been the industry's standard dummy text ever
                  since the 1500s, when an unknown printer took a standard dummy text.</p>
-                 <div class="mb-3">
+                <div class="mb-3">
                   <span class="badge bg-light text-dark p-2 border border-dark">CSS</span>
                   <span class="badge bg-light text-dark p-2 border border-dark mx-2">HTML</span>
                   <span class="badge bg-light text-dark p-2 border border-dark">Bootstrap</span>
                   <span class="badge bg-light text-dark p-2 border border-dark mx-2">Ruby</span>
                 </div>
                 <button class="btn btn-danger">See Project</button>
-                 
           </div>
-          
         </div>
-        <div class="row my-4">
+
+        <div class="row my-4 g-3">
           <div class="col">
             <div class="card bg-dark text-white">
               <img src="images/works-images/active-card.svg" class="card-img" alt="...">
@@ -101,23 +118,25 @@
               </div>
             </div>
           </div>
-          <div class="col">
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card bg-dark text-white border border-0">
               <img src="images/works-images/card-item2-img.svg" class="card-img" alt="...">
               <div class="card-img-overlay d-flex flex-column justify-content-end">
                 <h4 class="card-title">Data Dashboard Healthcare</h4>
-                
                 <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                
                 <div class="mb-3">
                   <span class="badge bg-secondary text-light p-2 ">CSS</span>
                   <span class="badge bg-secondary text-light p-2 mx-2">HTML</span>
                   <span class="badge bg-secondary text-light p-2">Bootstrap</span>
                   <span class="badge bg-secondary text-light p-2 mx-2">Ruby</span>
+                
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card bg-dark text-white border border-0">
               <img src="images/works-images/card-item3-img.svg" class="card-img" alt="...">
               <div class="card-img-overlay d-flex flex-column justify-content-end">
@@ -134,8 +153,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="row g-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card bg-dark text-white border border-0">
               <img src="images/works-images/carditem-img.png" class="card-img" alt="...">
               <div class="card-img-overlay d-flex flex-column justify-content-end">
@@ -151,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card bg-dark text-white border border-0">
               <img src="images/works-images/card-item2-img.svg" class="card-img" alt="...">
               <div class="card-img-overlay d-flex flex-column justify-content-end">
@@ -167,7 +186,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card bg-dark text-white border border-0">
               <img src="images/works-images/card-item3-img.svg" class="card-img" alt="...">
               <div class="card-img-overlay d-flex flex-column justify-content-end">
@@ -186,25 +205,25 @@
         </div>
            
       </section>
-      <section class="container-fluid bg-dark text-light">
+      <section class="container-fluid bg-dark text-light py-5">
         <div class="row ">
-          <div class="col  mx-5 align-self-center">
-            <h2>About Me</h2>
+          <div class="col  mx-5 align-self-center col-12 col-sm-12 col-md-6 col-lg-4 pe-5 me-5">
+            <h2 id="scrollspyheading2">About Me</h2>
             <p>Hello I’m a software developer! I can help you build a 
               product , feature or website Look through some of my work
                and experience! If you like what you see and have a project
                 you need coded, don’t hestiate to contact me.</p>
             <button class="btn btn-danger">Get My Resume</button>
           </div>
-          <div class="col ">
-            <img src="images/about-images/illustration-aboutme-desktop.svg" alt="">
+          <div class="col pe-0">
+            <img class="img-fluid" src="images/about-images/illustration-aboutme-desktop.svg" alt="illustraion image">
           </div>
         </div>
         <div class="row container ms-5 my-5">
           <hr>
         </div>
-        <div class="row mx-5">
-          <div class="col">
+        <div class="row mx-5 px-5 justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="d-flex align-items-center">
               <img src="images/about-images/Rectangle55.png" class="w-5 p-3 bg-dark border-0 me-2 " alt="Rectangle icon">
               <h3>Language</h3>
@@ -220,7 +239,7 @@
               </ol>
           </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="d-flex align-items-center">
               <img src="images/about-images/Rectangle56.png" class="w-5 p-3 bg-dark border-0 me-2" alt="Rectangle icon">
               <h3>Frameworks</h3>
@@ -233,11 +252,10 @@
                   <li class="breadcrumb-item ps-0">RSpec</li>
                   <li class="breadcrumb-item ps-0  my-2" aria-current="page">CapyBara</li>
                   <li class="breadcrumb-item ps-0  my-2" aria-current="page">Selenium</li>
-                  
               </ol>
           </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="d-flex align-items-center">
               <img src="images/about-images/Rectangle57.png" class="w-5 p-3 bg-dark border-0 me-2" alt="Rectangle icon">
               <h3>Skills</h3>
@@ -250,12 +268,52 @@
                   <li class="breadcrumb-item ps-0">Codepen</li>
                   <li class="breadcrumb-item ps-0  my-2" aria-current="page">Gitlab</li>
                   <li class="breadcrumb-item ps-0  my-2" aria-current="page">Terminal</li>
-                  
               </ol>
           </div>
           </div>
         </div>
-
       </section>
+
+      <section>
+        <div class="row container mx-5 my-5 fs-1 fw-bolder g-3 justify-content-center pb-5">
+          <div class="col-4 pe-5 ms-5 col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2  id="scrollspyheading3">
+              I'm always interested in hearing about new projects,
+               so if you'd like to chat please get in touch.
+            </h2>
+          </div>
+
+          <div class="col me-5 pe-4">
+            <div>
+              <form action="">
+                <div class="mb-3">
+                  <input class="form-control border-top-0 border-start-0 border-end-0 border-bottom-1" type="text" name="fullname" placeholder="Fullname">
+                </div>
+                <div class="mb-3">
+                  <input class="form-control border-top-0 border-start-0 border-end-0 border-bottom-1" type="email" name="email" placeholder="Email Address">
+                </div>
+                <div>
+                  <textarea class="form-control bg-light" name="textarea" id="" cols="30" rows="5"></textarea>
+                </div>
+                <button  class="btn btn-danger" type="submit">Get in touch</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row border border-top-1 align-items-center p-2">
+            <div style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+              <ol class="breadcrumb d-flex align-items-center justify-content-center">
+                  <li class="breadcrumb-item"><a href="#"><img src="images/social-icons/social-icons-dark/IconGitHub.png" alt="Github Icon"/></a></li>
+                  <li class="breadcrumb-item  my-2" aria-current="page"><img src="images/social-icons/social-icons-dark/IconLinkedin.png" alt="Linkedin Icon"/></li>
+                  <li class="breadcrumb-item"><a href="#"><img src="images/social-icons/social-icons-dark/Vector.png" alt="Angelist Icon"/></a></li>
+                  <li class="breadcrumb-item my-2" aria-current="page"><img src="images/social-icons/social-icons-dark/twitter.png" alt="Twitter Icon"/></li>
+                  <li class="breadcrumb-item"><a href="#"><img src="images/social-icons/social-icons-dark/medium.png" alt="Medium Icon"/></a></li>
+              </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+            
 </body>
 </html>
